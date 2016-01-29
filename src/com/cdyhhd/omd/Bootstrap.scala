@@ -16,8 +16,8 @@ object Bootstrap extends App {
 //  val gateServer = new GateServer(system, 9000)
 //  gateServer.start
   
+  val helloActor = system.actorOf(Props[HelloActor])
   Range(1, 10).foreach(i => {
-    val helloActor = system.actorOf(Props[HelloActor], "user_"+i)
     log.debug("send hello")
     helloActor ! "hello"  
   })
