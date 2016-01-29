@@ -1,4 +1,4 @@
-package com.cdyhhd.omd.game
+package com.cdyhhd.omd.actor
 
 import akka.actor.ActorLogging
 import akka.actor.Actor
