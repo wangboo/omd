@@ -5,8 +5,8 @@ import akka.actor.Actor
 
 class GameActor extends Actor with ActorLogging {
   
-  def recieve = {
-    
+  def receive = {
+    case (id, msg) => println(id + ": msg" + msg) 
   }
   
 }

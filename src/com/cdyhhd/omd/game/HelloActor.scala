@@ -6,7 +6,7 @@ import akka.actor.Actor
 class HelloActor extends Actor with ActorLogging {
   
   def receive = {
-    case "test" => log.debug("recv test")
+    case "hello" => log.debug("recv test " + this)
     case aa => log.debug("recv unknown {}", aa)
   }
   
